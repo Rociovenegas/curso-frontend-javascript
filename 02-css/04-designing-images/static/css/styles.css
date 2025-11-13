@@ -1,12 +1,16 @@
+/* Configuración global */
+
 * {
     box-sizing: border-box;
 }
+
 
 body {
     background-color: #CBF2F4;
     margin: 10px;
 }
 
+/* Encabezado principal */
 h1 {
     display: flex;
     height: 10vh;
@@ -19,6 +23,8 @@ h1 {
 
 }
 
+
+/* Imágenes verticales por defecto */
 img {
     max-width: 150px;
     height: 200px;
@@ -26,6 +32,8 @@ img {
     object-fit: cover;
 }
 
+
+/* Imágenes horizontales */
 .horizontal-img {
     max-width: 200px;
     height: 150px;
@@ -33,6 +41,7 @@ img {
     object-fit: cover;
 }
 
+/* Fuente de Google Fonts */
 .meow-script-regular {
     font-family: "Meow Script", cursive;
     font-weight: 500;
@@ -49,6 +58,7 @@ img {
     background-color: deeppink;
 }
 
+/* Fila de imágenes */
 .sub-content {
     display: flex;
     align-items: center;
@@ -67,6 +77,8 @@ img {
     background-color: #82F1D4;
 }
 
+
+/* Pie de página */
 .footer {
     height: 6vh;
     background-color: #F0BCBE;
