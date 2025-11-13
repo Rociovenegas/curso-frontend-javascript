@@ -1,8 +1,10 @@
+/* Se utilizo durante el desarrollo para alinear todo... */
 /* body {
     background-color: #eaeaea;
     background-color: #c02929;
 } */
 
+/* Centra todo el contenido y define el ancho fijo */
 .container {
     width: 950px;
     background-color: #eaeaea;
@@ -10,19 +12,23 @@
     padding: 12px 12px;
 }
 
+/* Representa una barra de navegacion */
 .top-nav {
     height: 150px;
     background-color: #ffcc00;
     margin: 10px 0;
 }
 
-
+/* Contenido Principal */
+/* display: inline-block permite que esté al lado de .side-nav */
+/* vertical-align: top alinea la parte superior con .side-nav */
 .main {
     display: inline-block;
     height: 400px;
     width: 700px;
     background-color: deeppink;
     vertical-align: top;
+    /* alinea al tope junto con .side-nav */
 }
 
 
@@ -33,8 +39,10 @@
     background-color: #66ccff;
     margin: 10px;
     vertical-align: top;
+    /* alinea al tope junto con .main*/
 }
 
+/* inline-block permite que las 3 cajas estén lado a lado */
 .sub-content {
     display: inline-block;
     height: 200px;
