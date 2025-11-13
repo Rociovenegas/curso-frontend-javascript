@@ -1,0 +1,74 @@
+# Created with the help of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,linux
+
+
+# ============================================================
+# System and environment
+# ============================================================
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# ============================================================
+# Visual Studio Code
+# ============================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# VS Code local history / Ionide
+.history/
+.ionide/
+
+# ============================================================
+# Compressed and temporary files
+# ============================================================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bak
+*.tmp
+*.log
+
+# ============================================================
+# System or browser files
+# ============================================================
+.DS_Store
+.idea/
+node_modules/
+dist/
+build/
+.env
+.env.local
+.cache/
+coverage/
+
+# ============================================================
+# Others
+# ============================================================
+# Ignora archivos o carpetas de build generadas por el deploy
+.netlify/
+out/
