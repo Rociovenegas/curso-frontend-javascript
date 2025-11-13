@@ -19,15 +19,15 @@ h1 {
     align-items: center;
     justify-content: center;
     color: #333;
-    font-size: 3rem;
+    font-size: 4rem;
 
 }
 
 
 /* Imágenes verticales por defecto */
 img {
-    max-width: 150px;
-    height: 200px;
+    max-width: 270px;
+    height: 360px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -35,8 +35,8 @@ img {
 
 /* Imágenes horizontales */
 .horizontal-img {
-    max-width: 200px;
-    height: 150px;
+    max-width: 360px;
+    height: 270px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -85,5 +85,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: x-large;
+    font-size: 3rem;
+
 }
