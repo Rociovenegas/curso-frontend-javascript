@@ -1,1 +1,1 @@
-#
+# Actividad práctica: Entrada de diccionario (etiquetas HTML).

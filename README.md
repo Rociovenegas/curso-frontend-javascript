@@ -1,1 +1,1 @@
-# Proyecto 1
+# Tareas y actividades del curso: Desarrollo Front-End con Javascript.

@@ -1,1 +1,1 @@
-#
+# Actividad práctica: Estilo Box Model (Selectores y propiedades básicas).
