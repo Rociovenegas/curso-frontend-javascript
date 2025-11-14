@@ -5,7 +5,8 @@
     color: var(--color-font);
 }
 
-/* Estilos globales */
+
+/* Variables globales */
 
 :root {
     --color-fondo: #EEEEEE;
@@ -14,47 +15,14 @@
     --color-sombra: 4px 6px 12px rgba(0, 0, 0, 0.15);
     --color-font: #666666;
     --color-font-secundario: #333333;
+    --color-font-terciario: #666555;
     --color-boton: #F5F5F5;
     /* --color-font: #a50000; */
 
 }
 
 
-/* Overlay de referencia */
-.overlay {
-    position: fixed;
-    /* siempre encima de la pantalla */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* deja interactuar con la página */
-    z-index: 1000;
-    /* encima de todo */
-}
-
-.overlay img {
-    max-width: 80%;
-    /* ajusta tamaño máximo */
-    max-height: 80%;
-    /* mantiene proporciones */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* centra la imagen */
-    opacity: 0.5;
-    /* transparencia */
-    border: 3px solid #000;
-}
-
-
-.content {
-    position: relative;
-    z-index: 1;
-}
-
+/* Estilos base */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -67,54 +35,14 @@ main {
     margin: 100px 0;
 }
 
-.user-card-container {
-    height: 750px;
-    width: 930px;
-    padding: 80px 50px 100px 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* border: 3px solid #f8a100; */
-    background: linear-gradient(to bottom,
-            #00BCD4 0%,
-            #00BCD4 20%,
-            #FFFFFF 20%,
-            #FFFFFF 100%);
-    height: 750px;
-    width: 930px;
-    border-radius: 20px;
-}
+button {
+    background-color: var(--color-boton);
+    border: none;
+    padding: 15px 30px;
+    font-size: 25px;
+    color: #000;
+    border-radius: 10px;
 
-.profile-photo-container {
-    height: 40%;
-}
-
-.user-card-body {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content:  space-between;
-
-    padding: 24px 0;
-    /* border: 3px solid #a70600; */
-}
-
-.user-info {
-    display: grid;
-    /* border: 3px solid #00d636; */
-    height: 70%;
-    padding: 5px 0;
-
-}
-
-
-.profile-photo-container>img {
-    border-radius: 50%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    position: relative;
-    width: 230px;
-    border: 4px solid #FFFFFF;
 }
 
 h1 {
@@ -130,13 +58,67 @@ p {
 
 }
 
-button {
-    background-color: var(--color-boton);
-    border: none;
-    padding: 15px 30px;
-    font-size: 25px;
-    color: #000;
-    border-radius: 10px;
 
+/* Tarjeta de usuario */
+
+/* Contenedor de Tarjeta de usuario */
+.user-card-container {
+    height: 750px;
+    width: 930px;
+    padding: 80px 50px 100px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* border: 3px solid #f8a100; */
+    /* Gradiente: 20% superior cian, 80% inferior blanco (Fondo de dos colores) */
+    background: linear-gradient(to bottom,
+            #00BCD4 0%,
+            #00BCD4 20%,
+            #FFFFFF 20%,
+            #FFFFFF 100%); 
+    height: 750px;
+    width: 930px;
+    border-radius: 20px;
+}
+
+
+/* Foto de perfil */
+.profile-photo-container {
+    height: 40%;
+}
+
+.profile-photo-container>img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: relative;
+    width: 230px;
+    border: 4px solid #FFFFFF;
+}
+
+
+/* Sección de información del usuario */
+.user-card-body {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    padding: 24px 0;
+    /* border: 3px solid #a70600; */
+}
+
+
+.user-info {
+    display: grid;
+    /* border: 3px solid #00d636; */
+    height: 70%;
+    padding: 5px 0;
+
+}
+
+/* Estilo para el primer párrafo */
+.user-info p:first-child{
+    color: var(--color-font-terciario);
+    font-weight: 500;
 }
 

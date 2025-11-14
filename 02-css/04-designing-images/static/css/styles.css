@@ -33,19 +33,14 @@ img {
 }
 
 
-/* Imágenes horizontales */
-.horizontal-img {
-    max-width: 360px;
-    height: 270px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
 /* Fuente de Google Fonts */
 .meow-script-regular {
     font-family: "Meow Script", cursive;
     font-weight: 500;
 }
+
+
+/* Galería de imágenes */
 
 .container {
     display: block;
@@ -54,8 +49,16 @@ img {
 }
 
 .main {
-    display: block;
+    display: grid;
     background-color: deeppink;
+}
+
+/* Imágenes horizontales */
+.horizontal-img {
+    max-width: 360px;
+    height: 270px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* Fila de imágenes */
@@ -63,10 +66,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
     gap: 40px;
     width: 100%;
     background-color: #BBF1C4;
-    padding: 20px 0px;
+    padding: 2em 10em;
 }
 
 .sub-content:nth-child(2) {
@@ -88,3 +92,4 @@ img {
     font-size: 3rem;
 
 }
+
